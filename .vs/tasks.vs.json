@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-profile",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-settings",
+      "appliesTo": "myproject/settings.py",
+      "type": "launch"
+    }
+  ]
+}
