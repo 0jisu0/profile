@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(requst):
-    return HttpResponse('Welcome!')
+    return render(requst,'index.html')
 def selfcommend(requst):
     return HttpResponse("i'm "+id)
 
