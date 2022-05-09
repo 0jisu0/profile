@@ -16,9 +16,12 @@ Including another URLconf
 from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path
+import myapp.views
+
 
 urlpatterns = [
-    path('', views.index),
+    path('admin/', admin.site.urls)
+    path('', myapp.views.index, name='index'),
     path('selfCommend/<id>', views.selfcommend),
 
     path('admin/', admin.site.urls),
